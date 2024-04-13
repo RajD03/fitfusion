@@ -1,38 +1,327 @@
-.App {
-  text-align: center;
-}
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+ body {
+   height: 100%;
+ }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+ html {
+   font-size: 62.5%;
+ }
 
-.App-link {
-  color: #61dafb;
-}
+ @media(max-width: 998px) {
+   html {
+     font-size: 55%;
+   }
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ @media(max-width: 768px) {
+   html {
+     font-size: 45%;
+   }
+ }
+
+ nav {
+   background: var(--Color-1, #1F1F1F);
+   overflow: hidden;
+   position: fixed;
+   width: 100%;
+   padding: 1rem;
+   height: 4rem;
+ }
+
+ nav a {
+   color: #1bf7ef;
+   margin: 2rem;
+   text-decoration: none;
+   font-size: 1.7rem;
+   font-family: "Pangolin", cursive;
+ }
+
+ nav a:hover {
+   text-decoration: underline;
+ }
+
+ /* ._footer {
+   clear: both;
+   position: relative;
+   height: 200px;
+   margin-top: -200px;
+ } */
+
+ .main_image {
+   background-color: rgba(59, 46, 46, 0.925);
+ }
+
+ .img1 {
+   background-color: rgba(59, 46, 46, 0.925);
+   width: 100%;
+   margin-top: 4rem;
+   padding: 3rem;
+   border-radius: 4rem;
+   font-family: "Titillium Web", sans-serif;
+ }
+
+ .todolist {
+   background-color: rgba(59, 46, 46, 0.925);
+   display: flex;
+   gap: 2rem;
+   width: 100%;
+   justify-content: center;
+   padding: 2rem;
+   font-family: "Pangolin", cursive;
+ }
+
+ .todolist_left {
+   display: flex;
+   flex-direction: column;
+   background-color: aliceblue;
+   width: 40%;
+   height: 45rem;
+   padding: 2.5rem;
+   text-align: center;
+   border-radius: 5rem;
+ }
+
+ .img2 {
+   width: 100%;
+   height: 100%;
+   border-radius: 8rem;
+ }
+
+ .todolist_right {
+   background-color: rgb(113, 169, 219);
+   width: 30%;
+   padding: 1rem;
+   text-align: center;
+   border-radius: 5rem;
+   padding: 2rem;
+   font-size: 100%;
+   font-family: "Pangolin", cursive;
+ }
+
+ .plusBtn {
+   font-size: 2rem;
+   cursor: pointer;
+ }
+
+ .input_item {
+   height: 3rem;
+   border-radius: 2rem;
+   text-align: center;
+   justify-content: center;
+   background-color: rgb(151, 186, 215);
+   font-family: "Pangolin", cursive;
+ }
+
+ .crossBtn {
+   font-size: 2rem;
+   cursor: pointer;
+ }
+
+ .item_list {
+   display: flex;
+   font-size: 2.2rem;
+   margin-top: 2rem;
+   text-align: center;
+   margin-left: 10%;
+ }
+
+ .list {
+   font-size: 100%;
+   margin-left: 3rem;
+   text-align: center;
+ }
+
+ .wrapper {
+   background-color: rgba(59, 46, 46, 0.925);
+   border: #071717 solid 2px;
+   display: flex;
+   align-content: center;
+   /* font-size: 100%; */
+   padding: 4rem;
+   height: 30rem;
+   gap: 4rem;
+   /* box-shadow: .1rem .1rem 3rem 2rem #021010; */
+   box-shadow: 1rem 1rem 3rem .1rem #051010;
+ }
+
+ .accordion {
+   border-radius: 2rem;
+   display: flex;
+   gap: 3rem;
+   text-align: justify;
+   padding: 1rem;
+   box-shadow: .1rem .1rem 3rem 1rem #051010;
+   /* width: 75%; */
+ }
+
+ .accordion_title {
+   color: #1bf7ef;
+   font-size: 5rem;
+   font-family: "Pangolin", cursive;
+ }
+
+ .title {
+   font-family: "Pangolin", cursive;
+   display: flex;
+   flex-direction: row;
+   gap: 1rem;
+   cursor: pointer;
+   font-size: 100%;
+ }
+
+ .questions {
+   /* font-size: 2.3rem; */
+   /* border: #1bf7ef solid 1px; */
+   text-wrap: nowrap;
+   margin-top: .1rem;
+   color: #1bf7ef;
+ }
+
+ .content {
+   color: #06797f;
+   max-height: 0;
+   overflow: hidden;
+   height: 100%;
+ }
+
+ .content.show {
+   font-size: 100%;
+   font-family: "Pangolin", cursive;
+   font-size: 15px;
+   /* color: #06797f; */
+   color: #1bf7ef;
+   width: 20rem;
+   height: 100%;
+   max-height: 9999px;
+   transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+   justify-content: center;
+   align-items: center;
+   /* border: #1bf7ef solid 1px; */
+   text-align: center;
+   margin-top: 1rem;
+   padding: 3px;
+ }
+
+ span {
+   font-size: 2rem;
+ }
+
+
+ ._contact {
+   background-color: rgba(59, 46, 46, 0.925);
+   height: 500px;
+   text-align: center;
+   font-family: "Pangolin", cursive;
+ }
+
+
+ ._contact h1 {
+   color: #1bf7ef;
+   font-size: 40px;
+   width: 100%;
+   margin-bottom: 2rem;
+   font-family: "Pangolin", cursive;
+ }
+
+ .contact_input {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 4rem;
+   gap: 2rem;
+   width: 75%;
+   margin: auto;
+   border-radius: 2rem;
+   /* border: #04dfd8 solid .1rem; */
+   box-shadow: .1rem .1rem 3rem 2rem #021010;
+   font-family: "Pangolin", cursive;
+ }
+
+ ._iname {
+   height: 3.5rem;
+   width: 75%;
+   margin: auto;
+   text-align: center;
+   /* background-color: #668483; */
+   border-radius: 2rem;
+   color: #eaebeb;
+   font-family: "Pangolin", cursive;
+ }
+
+ ._imsg {
+   height: 8rem;
+   width: 75%;
+   margin: auto;
+   text-align: center;
+   /* background-color: #668483; */
+   border-radius: 2rem;
+   color: #1acbad;
+   font-family: "Pangolin", cursive;
+ }
+
+ ._submit {
+   height: 3rem;
+   width: 20%;
+   margin: auto;
+   text-align: center;
+   background-color: #668483;
+   border-radius: 2rem;
+   box-shadow: .1rem .1rem 1rem .1rem #1bf7ef;
+   font-family: "Pangolin", cursive;
+   color: #04dfd8;
+ }
+
+ ._submit:hover {
+   background-color: #1F1F1F;
+   cursor: pointer;
+   color: aliceblue;
+   box-shadow: .1rem .1rem 1rem .1rem #1bf7ef;
+ }
+
+ ._footer {
+   background: #1F1F1F;
+   height: 180px;
+   text-align: center;
+   border-top: #04dfd8 solid .1rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-family: "Titillium Web", sans-serif;
+ }
+
+ .footer_img {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+ }
+
+ ._git,
+ ._link,
+ ._twit,
+ ._instagram {
+   border-radius: 1rem;
+   width: 4rem;
+   margin: 3rem;
+   box-shadow: .1rem .1rem 1rem .1rem #1bf7ef;
+ }
+
+ .nav_foot {
+   display: flex;
+   flex-direction: column;
+   font-size: 2rem;
+ }
+
+ .back_to_top {
+   color: #04dfd8;
+   font-family: "Titillium Web", sans-serif;
+   margin: 1rem;
+ }
