@@ -3,11 +3,14 @@ import React from 'react'
 const Nav = () => {
     return (
         <>
-            <nav>
+            <nav id='#'>
                 <a href="#">Home</a>
-                <a href="#projects" >Projects </a>
-                <a href="#about" >About </a>
-                <a href="#contacts">Contact Me</a>
+                <a href="#goals" >MyGoals</a>
+                <a href="#experts" >ExpertAdvice</a>
+                <a href="#sessions" >Online Sessions </a>
+                <a href="#subcription">Subscription</a>
+                <a href="#contacts">ContactUs</a>
+                {/* <a href="#contacts">LOGIN/SIGNUP</a> */}
             </nav>
         </>
     )

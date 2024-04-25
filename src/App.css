@@ -277,13 +277,13 @@
  }
 
  .features {
-   border: #021010 solid 10px;
+   border: #1bf7ef solid 10px;
    text-align: left;
    line-height: 4.5rem;
    /* padding: 1rem; */
    width: 30rem;
    border-radius: 2rem;
-
+   box-shadow: .1rem .1rem 1rem .1rem #1bf7ef;
  }
 
  .features h1 {
@@ -298,9 +298,10 @@
  }
 
  .basic {
-   border: #021010 solid 10px;
+   border: #1bf7ef solid 10px;
    line-height: 4.5rem;
    border-radius: 2rem;
+   box-shadow: .1rem .1rem 1rem .1rem #1bf7ef;
  }
 
  .basic h1 {
@@ -309,11 +310,12 @@
  }
 
  .standard {
-   border: #021010 solid 10px;
+   border: #1bf7ef solid 10px;
    /* padding: 2rem; */
    line-height: 4.5rem;
    border-radius: 2rem;
    /* width: 20rem; */
+   box-shadow: .1rem .1rem 1rem .1rem #1bf7ef;
  }
 
  .standard h1 {
@@ -322,11 +324,12 @@
  }
 
  .premium {
-   border: #021010 solid 10px;
+   border: #1bf7ef solid 10px;
    /* padding: 2rem; */
    line-height: 4.5rem;
    border-radius: 2rem;
    /* width: 20rem; */
+   box-shadow: .1rem .1rem 1rem .1rem #1bf7ef;
  }
 
  .premium h1 {
@@ -457,4 +460,66 @@
    color: #04dfd8;
    font-family: "Titillium Web", sans-serif;
    margin: 1rem;
+ }
+
+
+ ._box {
+   background-color: rgba(59, 46, 46, 0.925);
+   text-align: center;
+   /* background: #1F1F1F; */
+   height: 470px;
+   padding: 5rem;
+ }
+
+ ._pro {
+   color: #1bf7ef;
+   font-size: 40px;
+   width: 100%;
+   font-family: "Titillium Web", sans-serif;
+   font-family: "Pangolin", cursive;
+ }
+
+ .main_container {
+   box-shadow: .1rem .1rem 1rem .1rem #1bf7ef;
+   width: 75%;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   border-radius: 2rem;
+   margin-top: 2rem;
+   font-family: "Titillium Web", sans-serif;
+   height: 33rem;
+   font-family: "Pangolin", cursive;
+ }
+
+ .all_cards {
+   color: #1bf7ef;
+   height: 25rem;
+   border-radius: 10px;
+   text-align: justify;
+   text-justify: inter-word;
+   text-align: center;
+   font-size: 8px;
+   cursor: pointer;
+ }
+
+ .all_cards:hover {
+   box-shadow: 0px 1px 10px 10px#04dfd8;
+   border-radius: 4.5rem;
+ }
+
+ .cards_image {
+   margin: 1rem;
+   height: 100%;
+ }
+
+ .card_img {
+   border-radius: 3rem;
+   width: 90%;
+   height: 90%;
+   margin: auto;
+ }
+
+ .card_type {
+   color: #04dfd8;
  }

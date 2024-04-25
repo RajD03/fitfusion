@@ -8,6 +8,8 @@ import Accordion from './components/ExpertAdvice/Accordion'
 import Contact from './components/Contact'
 import Videos from './components/Videos'
 import Subscriptions from './components/Subscriptions'
+import Project from './project'
+
 
 const App = () => {
   return (
@@ -15,8 +17,10 @@ const App = () => {
       <Nav />
       <Main />
       <Todolist />
-      <Accordion />
+      <Project />
       <Videos />
+      {/* <Project /> */}
+      {/* <Accordion /> */}
       <Subscriptions />
       <Contact />
       <Footer />

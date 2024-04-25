@@ -16,8 +16,8 @@ const Footer = () => {
                         <a href='https://www.instagram.com/divesh_raj_03/' target='blank' ><img src={insta} className='_instagram' /></a>
                     </div>
                     <div className='nav_foot' >
-                        <a href='#home' > ⬆️ </a>
-                        <a href='#home' className='back_to_top'> BACK TO TOP </a>
+                        <a href='#' > ⬆️ </a>
+                        <a href='#' className='back_to_top'> BACK TO TOP </a>
                     </div>
                 </div>
             </foooter>

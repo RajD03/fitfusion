@@ -18,7 +18,7 @@ const Todolist = () => {
     };
 
     return <>
-        <div className="todolist">
+        <div className="todolist" id="goals">
             <h1 className="goal_heading">MY GOALS</h1>
             <div className="todolist_left">
                 <img src={img2} className="img2" />
