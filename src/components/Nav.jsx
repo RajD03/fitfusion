@@ -10,7 +10,7 @@ const Nav = () => {
                 <a href="#sessions" >Online Sessions </a>
                 <a href="#subcription">Subscription</a>
                 <a href="#contacts">ContactUs</a>
-                {/* <a href="#contacts">LOGIN/SIGNUP</a> */}
+                <a href="#user">LOGIN/SIGNUP</a>
             </nav>
         </>
     )

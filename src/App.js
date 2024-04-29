@@ -9,6 +9,9 @@ import Contact from './components/Contact'
 import Videos from './components/Videos'
 import Subscriptions from './components/Subscriptions'
 import Project from './project'
+import Login from './components/Login'
+import Signup from './components/Signup'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 
 const App = () => {
@@ -19,10 +22,12 @@ const App = () => {
       <Todolist />
       <Project />
       <Videos />
-      {/* <Project /> */}
-      {/* <Accordion /> */}
       <Subscriptions />
       <Contact />
+      <div className='user_reg'>
+        <Login />
+        <Signup />
+      </div>
       <Footer />
     </>
   )

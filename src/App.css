@@ -523,3 +523,77 @@
  .card_type {
    color: #04dfd8;
  }
+
+ .user_reg {
+   display: flex;
+   gap: 2rem;
+   align-items: center;
+   justify-content: center;
+   height: 40rem;
+   background-color: rgba(59, 46, 46, 0.925);
+   font-family: "Pangolin", cursive;
+   color: #04dfd8;
+ }
+
+ .signup {
+   /* border: #021010 solid 1px; */
+   height: 30rem;
+   /* text-align: justify; */
+   display: flex;
+   flex-direction: column;
+   font-size: 3rem;
+   width: 25%;
+ }
+
+ .signup input {
+   width: 90%;
+   margin: 1rem;
+   height: 3rem;
+   border-radius: 1rem;
+   text-align: center;
+ }
+
+ .signup h2 {
+   text-align: center;
+ }
+
+ .login {
+   /* border: #021010 solid 1px; */
+   height: 30rem;
+   /* text-align: justify; */
+   display: flex;
+   flex-direction: column;
+   font-size: 3rem;
+   width: 25%;
+
+ }
+
+ .login h2 {
+   text-align: center;
+ }
+
+ .login input {
+   width: 90%;
+   margin: 1rem;
+   height: 3rem;
+   border-radius: 1rem;
+   text-align: center;
+ }
+
+ .login_button {
+   text-align: center;
+   margin-left: 40%;
+   font-size: 2rem;
+   padding: 1rem;
+   border-radius: 1rem;
+   cursor: pointer;
+ }
+
+ .signup_button {
+   text-align: center;
+   margin-left: 40%;
+   font-size: 2rem;
+   padding: 1rem;
+   border-radius: 1rem;
+   cursor: pointer;
+ }
